@@ -254,10 +254,6 @@ This project demonstrates:
 4. **Real-world Application** - Solves actual business problem
 5. **Production Ready** - Error handling, logging, state management
 
-## 👥 Team
-
-Built for the Motia Hackathon 2024
-
 ---
 
 *Narriq - Transform any website into compelling video ads with AI*
