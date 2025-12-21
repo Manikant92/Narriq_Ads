@@ -1,0 +1,142 @@
+[
+  {
+    "id": "quickcreate",
+    "config": {
+      "steps\\workflow-start.step.ts": {
+        "x": 350,
+        "y": 0
+      },
+      "steps\\workflow-end.step.ts": {
+        "x": 3150,
+        "y": 155
+      },
+      "steps\\tts.step.ts": {
+        "x": 2450,
+        "y": 34
+      },
+      "steps\\script-gen.step.ts": {
+        "x": 700,
+        "y": 155
+      },
+      "steps\\scrape-site.step.ts": {
+        "x": 0,
+        "y": 155
+      },
+      "steps\\quickcreate-api.step.ts": {
+        "x": 0,
+        "y": 155
+      },
+      "steps\\project-status-api.step.ts": {
+        "x": 12,
+        "y": 267
+      },
+      "steps\\image-gen.step.ts": {
+        "x": 1050,
+        "y": 155
+      },
+      "steps\\enqueue-renders.step.ts": {
+        "x": 1400,
+        "y": 155
+      },
+      "steps\\content-moderation.step.ts": {
+        "x": 1400,
+        "y": 267
+      },
+      "steps\\brand-extract.step.ts": {
+        "x": 350,
+        "y": 155
+      },
+      "steps\\analytics-agent.step.ts": {
+        "x": 2100,
+        "y": 34
+      }
+    }
+  },
+  {
+    "id": "system",
+    "config": {
+      "steps\\health-api.step.ts": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  {
+    "id": "maintenance",
+    "config": {
+      "steps\\cleanup-cron.step.ts": {
+        "x": 0,
+        "y": 203
+      }
+    }
+  },
+  {
+    "id": "ad-generation",
+    "config": {
+      "steps\\workflow-start.step.ts": {
+        "x": 350,
+        "y": 160
+      },
+      "steps\\workflow-end.step.ts": {
+        "x": 3150,
+        "y": 315
+      },
+      "steps\\tts.step.ts": {
+        "x": 2450,
+        "y": 315
+      },
+      "steps\\sketch-storyboard-api.step.ts": {
+        "x": 0,
+        "y": 0
+      },
+      "steps\\script-gen.step.ts": {
+        "x": 1050,
+        "y": 315
+      },
+      "steps\\scrape-site.step.ts": {
+        "x": 350,
+        "y": 315
+      },
+      "steps\\render-status-api.step.ts": {
+        "x": 25,
+        "y": 223
+      },
+      "steps\\render-api.step.ts": {
+        "x": 45,
+        "y": 426
+      },
+      "steps\\project-status-api.step.ts": {
+        "x": -282,
+        "y": 1
+      },
+      "steps\\image-gen.step.ts": {
+        "x": 1750,
+        "y": 315
+      },
+      "steps\\generate-ad-api.step.ts": {
+        "x": -367,
+        "y": 218
+      },
+      "steps\\enqueue-renders.step.ts": {
+        "x": 2800,
+        "y": 315
+      },
+      "steps\\download-api.step.ts": {
+        "x": 0,
+        "y": 1075
+      },
+      "steps\\content-moderation.step.ts": {
+        "x": 1397,
+        "y": 310
+      },
+      "steps\\brand-extract.step.ts": {
+        "x": 689,
+        "y": 381
+      },
+      "steps\\analytics-agent.step.ts": {
+        "x": 2100,
+        "y": 315
+      }
+    }
+  }
+]

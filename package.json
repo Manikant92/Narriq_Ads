@@ -1,0 +1,53 @@
+{
+  "name": "narriq",
+  "version": "1.0.0",
+  "description": "AI Ad Studio - Generate instant ads from any URL",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/install-all.js",
+    "dev": "concurrently \"npm run dev:motia\" \"npm run dev:frontend\"",
+    "dev:motia": "cd motia && npx motia dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:motia && npm run build:frontend",
+    "build:motia": "cd motia && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
+    "docker:build": "docker build -t narriq-ffmpeg-worker ./worker",
+    "docker:run": "docker-compose up -d",
+    "clean": "rimraf node_modules dist .motia frontend/node_modules motia/node_modules worker/node_modules"
+  },
+  "dependencies": {
+    "motia": "^0.17.10-beta.192",
+    "openai": "^4.20.0",
+    "zod": "^3.22.4",
+    "uuid": "^9.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.0",
+    "sharp": "^0.33.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "p-retry": "^6.1.0",
+    "p-queue": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^9.0.6",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "typescript": "^5.3.2",
+    "vitest": "^1.0.0",
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
