@@ -147,4 +147,4 @@ OPENAI_API_KEY=sk-your-openai-key
 
 ## 📄 License
 
-MIT License - Built for the Motia Hackathon 2024
+MIT License - Built for the Motia Hackathon 2025
